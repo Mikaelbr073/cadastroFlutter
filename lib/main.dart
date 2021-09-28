@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 void main() {
@@ -5,7 +7,7 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
-  const MyApp({Key? key}) : super(key: key);
+  //const MyApp({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -20,23 +22,26 @@ class MyApp extends StatelessWidget {
         body: Center(
           child: Column(
             children: [
-              Text('Bem-Vindo', style: TextStyle(color: Colors.blue,
-                  fontSize: 30)),
+              Text('Bem-Vindo',
+                  style: TextStyle(color: Colors.blue, fontSize: 30)),
               Padding(
                   padding: const EdgeInsets.all(20),
                   child: TextField(
+                    //controller: txtnome,
                     decoration: InputDecoration(
                         border: OutlineInputBorder(), labelText: 'Nome'),
                   )),
               Padding(
                   padding: const EdgeInsets.all(20),
                   child: TextField(
+                    //controller: txtidade,
                     decoration: InputDecoration(
                         border: OutlineInputBorder(), labelText: 'Idade'),
                   )),
               Padding(
                   padding: const EdgeInsets.all(20),
                   child: TextField(
+                    //controller: txtlocalizacao,
                     decoration: InputDecoration(
                         border: OutlineInputBorder(), labelText: 'Localização'),
                   )),
