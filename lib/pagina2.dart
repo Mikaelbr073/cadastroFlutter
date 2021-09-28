@@ -22,7 +22,8 @@ class _pagina2State extends State<pagina2> {
         centerTitle: true,
       ),
       body: Center(
-        child: Text('Nome: '),
+        child: Text(
+            'Nome:${widget.nome}, idade${widget.idade} localizacao${widget.localizacao}'),
       ),
     );
   }
